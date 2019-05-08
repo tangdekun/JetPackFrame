@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="demo_TwinklingRefreshLayout">
+        <attr name="demo_tr_wave_height" format="dimension" />
+        <attr name="demo_tr_head_height" format="dimension" />
+        <attr name="demo_tr_bottom_height" format="dimension" />
+        <attr name="demo_tr_overscroll_height" format="dimension" />
+        <attr name="demo_tr_enable_loadmore" format="boolean" />
+        <attr name="demo_tr_pureScrollMode_on" format="boolean" />
+        <attr name="demo_tr_show_overlay_refreshview" format="boolean" />
+        <attr name="demo_tr_headerView" format="dimension" />
+        <attr name="demo_tr_bottomView" format="dimension" />
+        <attr name="demo_onRefreshCommand" format="reference" />
+        <attr name="demo_onLoadMoreCommand" format="reference" />
+    </declare-styleable>
+</resources>

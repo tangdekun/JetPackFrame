@@ -1,0 +1,25 @@
+apply from: "../module.build.gradle"
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+android {
+    defaultConfig {
+        //如果是独立模块，则使用当前组件的包名
+        if (project.ext.runAsApp) {
+            applicationId "com.djt.study.base"
+        }
+    }
+}
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    kapt rootProject.ext.androidx['room-compiler']
+    kapt rootProject.ext.dependencies['dagger-android-processor']
+    // 需要应用 kotlin-kapt 插件，每个Module中必须添加依赖
+    kapt rootProject.ext.dependencies['dagger-compiler']
+
+    api project(':library_base')
+    api project(':library_res')
+
+
+}

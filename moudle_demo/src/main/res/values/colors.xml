@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="demo_colorPrimary">#3F51B5</color>
+    <color name="demo_colorPrimaryDark">#303F9F</color>
+    <color name="demo_colorAccent">#FF4081</color>
+    <color name="demo_textColor">#202020</color>
+    <color name="demo_textColorHint">#A0A0A0</color>
+    <color name="demo_textColorVice">#6C6C6C</color>
+    <color name="demo_viewLineColor">#F0F0F0</color>
+</resources>
