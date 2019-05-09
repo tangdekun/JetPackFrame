@@ -9,3 +9,5 @@ import javax.inject.Scope
 @MustBeDocumented
 @Retention(AnnotationRetention.RUNTIME)
 annotation class ActivityScope
+
+

@@ -25,10 +25,6 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    //support
-//    api rootProject.ext.support["support-v4"]
-//    api rootProject.ext.support["appcompat-v7"]
-//    api rootProject.ext.support["recyclerview-v7"]
     //rxjava
     api rootProject.ext.dependencies.rxjava
     api rootProject.ext.dependencies.rxandroid
@@ -78,8 +74,8 @@ dependencies {
     kapt rootProject.ext.dependencies["lifecycle-compiler"]
     api rootProject.ext.dependencies["kotlin"]
     api rootProject.ext.dependencies["dagger"]
-    api rootProject.ext.dependencies["dagger-android"]
-    api rootProject.ext.dependencies["dagger-android-support"]
+//    api rootProject.ext.dependencies["dagger-android"]
+//    api rootProject.ext.dependencies["dagger-android-support"]
 
     api rootProject.ext.dependencies["multidex"]
     api rootProject.ext.dependencies["tray"]
@@ -95,6 +91,7 @@ dependencies {
     api rootProject.ext.androidx["room-ktx"]
     api rootProject.ext.androidx["room-rxjava2"]
     api rootProject.ext.androidx["room-testing"]
+    api rootProject.ext.androidx["constraintlayout"]
 
 
 }

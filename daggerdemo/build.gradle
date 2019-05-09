@@ -1,0 +1,20 @@
+apply from: "../module.build.gradle"
+android {
+    defaultConfig {
+        //如果是独立模块，则使用当前组件的包名
+        if (project.ext.runAsApp) {
+            applicationId "com.tdk.daggerdemo"
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    compile(name: 'dagger-androidx-sources', ext: 'aar')
+    kapt rootProject.ext.dependencies['dagger-compiler']
+    implementation project(path: ':library_base')
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+//    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta1'
+
+}

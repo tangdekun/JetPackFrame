@@ -1,1 +1,3 @@
-include ':app', ':module_jetpack',  ':library_base', ':moudle_base','library_res'
+include ':app', ':library_base', ':moudle_base',':library_res'
+include ':daggerdemo'
+include  ':module_jetpack'
