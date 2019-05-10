@@ -9,8 +9,8 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    compile(name: 'dagger-androidx-sources', ext: 'aar')
+    implementation fileTree(dir: 'libs', include: ['*.jar','*.aar'])
+//    implementation(name: 'dagger-androidx', ext: 'aar')
     kapt rootProject.ext.dependencies['dagger-compiler']
     implementation project(path: ':library_base')
 

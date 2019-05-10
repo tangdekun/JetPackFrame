@@ -74,7 +74,7 @@ dependencies {
     kapt rootProject.ext.dependencies["lifecycle-compiler"]
     api rootProject.ext.dependencies["kotlin"]
     api rootProject.ext.dependencies["dagger"]
-//    api rootProject.ext.dependencies["dagger-android"]
+    api rootProject.ext.dependencies["dagger-android"]
 //    api rootProject.ext.dependencies["dagger-android-support"]
 
     api rootProject.ext.dependencies["multidex"]
