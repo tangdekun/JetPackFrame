@@ -3,6 +3,7 @@ package com.tdk.daggerdemo
 import android.content.Context
 import android.content.SharedPreferences
 import android.content.SharedPreferences.Editor
+import com.tdk.daggerdemo.base.BaseApplication
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
@@ -13,7 +14,7 @@ import javax.inject.Singleton
  * @Email tangdekun0924@gmail.com
  */
 @Module
-class AppModule(private val application: MyApplication) {
+class AppModule(private val application: BaseApplication) {
 
     @Singleton
     @Provides

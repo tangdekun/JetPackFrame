@@ -1,15 +1,17 @@
 package com.tdk.daggerdemo
 
-import dagger.Component
+import dagger.Subcomponent
+import dagger.android.AndroidInjectionModule
+import dagger.android.AndroidInjector
+
 
 /**
  * @Author tangdekun
  * @Date 2018/7/30-10:53
  * @Email tangdekun0924@gmail.com
  */
-//@Component(modules = [(MainModule::class)], dependencies = [AppComponent::class])
-//@CustomScopeName
-@Component
-interface MainComponent {
-    fun inject(mainActivity: MainActivity)
+@Subcomponent(modules = [AndroidInjectionModule::class])
+interface MainComponent : AndroidInjector<MainActivity> {
+    @Subcomponent.Factory
+    abstract class Builder : AndroidInjector.Factory<MainActivity>
 }

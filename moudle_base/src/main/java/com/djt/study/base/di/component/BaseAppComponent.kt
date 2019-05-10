@@ -12,7 +12,7 @@ import dagger.android.support.AndroidSupportInjectionModule
 import javax.inject.Singleton
 
 /**
- * @Author tangdekun
+ * @Author tangdekunO
  * @Date 2018/8/4-15:52
  * @Email tangdekun0924@gmail.com
  */

@@ -10,7 +10,8 @@ import javax.inject.Named
  * @Email tangdekun0924@gmail.com
  */
 @Module
-class MainModule(val mainActivity: MainActivity) {
+class MainModule {
+
 
     //    @Named("tangdekun")
     @Provides
@@ -34,8 +35,9 @@ class MainModule(val mainActivity: MainActivity) {
 
     @Named("tdk")
     @Provides
-    fun providerStudent():Student{
-        return Student("tdk",26)
+    fun providerStudent(): Student {
+        return Student("tdk", 26)
     }
+
 
 }

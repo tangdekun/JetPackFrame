@@ -3,11 +3,11 @@ package com.tdk.daggerdemo.second
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import com.tdk.daggerdemo.R
+import com.tdk.daggerdemo.base.BaseActivity
 import com.tdk.daggerdemo.second.ui.second.SecondFragment
 
-class SecondActivity : AppCompatActivity() {
+class SecondActivity : BaseActivity() {
 
     companion object {
 
