@@ -3,12 +3,12 @@ package com.tdk.daggerdemo
 import android.annotation.SuppressLint
 import android.os.Bundle
 import com.djt.base.utils.KLog
-import com.tdk.daggerdemo.base.BaseActivity
 import com.tdk.daggerdemo.second.SecondActivity
+import dagger.android.support.DaggerAppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import javax.inject.Inject
 
-class MainActivity : BaseActivity() {
+class MainActivity : DaggerAppCompatActivity() {
 
 
     @Inject

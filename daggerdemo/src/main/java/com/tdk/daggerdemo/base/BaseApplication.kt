@@ -9,7 +9,9 @@ import dagger.android.DaggerApplication
 open class BaseApplication : DaggerApplication() {
 
     override fun applicationInjector(): AndroidInjector<out DaggerApplication> {
-        return DaggerAppComponent.builder().appModule(AppModule(this)).application(this).build()
+        val appComponent = DaggerAppComponent.builder().appModule(AppModule(this)).application(this).build()
+        appComponent.inject(this)
+        return appComponent
     }
 
     companion object {

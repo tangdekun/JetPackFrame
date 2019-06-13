@@ -1,8 +1,7 @@
-package com.tdk.daggerdemo
+package com.tdk.daggerandroidx
 
-import android.app.Application
-import com.tdk.daggerdemo.base.BaseApplication
-import com.tdk.daggerdemo.di.module.ActivityModule
+import com.tdk.daggerdemo.AppModule
+import com.tdk.daggerdemo.MainActivityBindModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjectionModule
@@ -31,7 +30,7 @@ interface AppComponent : AndroidInjector<BaseApplication> {
     interface Builder {
 
         @BindsInstance
-        fun application(application: Application): Builder
+        fun application(application: BaseApplication): Builder
 
         fun build(): AppComponent
 

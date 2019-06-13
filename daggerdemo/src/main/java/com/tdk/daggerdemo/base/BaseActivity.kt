@@ -18,7 +18,6 @@ abstract class BaseActivity : DaggerAppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         //一处依赖,处处引用
-        AndroidInjection.inject(this)
         super.onCreate(savedInstanceState)
         lifecycleRegistry = LifecycleRegistry(this)
 

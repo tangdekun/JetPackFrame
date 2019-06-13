@@ -1,8 +1,7 @@
 package com.tdk.daggerdemo.base
 
 import com.tdk.daggerdemo.AppModule
-import com.tdk.daggerdemo.MainModule
-import com.tdk.daggerdemo.di.module.ActivityModule
+import com.tdk.daggerdemo.MainActivityBindModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjectionModule
@@ -21,8 +20,7 @@ import javax.inject.Singleton
         AppModule::class,
         AndroidInjectionModule::class,
         AndroidSupportInjectionModule::class,
-        ActivityModule::class,
-        MainModule::class
+        MainActivityBindModule::class
     ]
 )
 interface AppComponent : AndroidInjector<BaseApplication> {
